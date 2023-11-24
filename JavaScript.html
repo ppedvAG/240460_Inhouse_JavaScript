@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Schulung</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <form name="myForm" method="post" action="#" onsubmit="validateForm()">
+        Vorname: <input type="text" name="vname"> <br>
+        Nachname: <input type="text" name="nname" required>*
+
+        <input type="submit" name="absenden" value="Absenden">
+        <input type="reset" name="zuruecksetzen" value="Zurücksetzen">
+    </form>
+    
+    <a href="https://www.google.de" target="_blank">Google</a>
+    <a href="javascript:window.close()">Test Hallo</a>
+
+    <p id="TestFenster"></p>
+    <!-- Hat keine Funktion hier -->
+    <button onclick="closePage()">Hallo</button>
+
+    <script>
+        // JavaScript Code
+        // // appCodeName => Gibt Hersteller Namen des Browsers zurueck
+        // console.log(navigator.appCodeName);
+
+        // // appName => Gibt den offiziellen Namen des Browsers zurueck
+        // console.log(navigator.appName);
+
+        // <p> = Testfenster
+        document.getElementById("TestFenster").innerHTML = screen.width; 
+    </script>
+
+</body>
+</html>
